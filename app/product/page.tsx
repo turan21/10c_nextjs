@@ -1,9 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import React, { useEffect } from "react";
 import { useState } from "react"; // hooks
-import { Button } from "@/components/ui/button";
 
 function Products() {
   const [isLoading, setLoading] = useState(false);
@@ -20,15 +18,13 @@ function Products() {
       }}
     >
       <center>
-        <Button
-          size="lg"
-          variant="outline"
+        <button
           onClick={() => {
             setLoading(!isLoading);
           }}
         >
           <h1>{isLoading ? "Loading ..." : "Done"}</h1>
-        </Button>
+        </button>
       </center>
     </div>
   );

@@ -97,9 +97,9 @@ const AppBar: React.FC = () => {
             <Search size={20} />
           </Link>
         </button>
-        <button className="text-gray-600 hover:text-black">
+        <Link href="/cart" className="text-gray-600 hover:text-black">
           <ShoppingBag size={20} />
-        </button>
+        </Link>
         <button className="text-gray-600 hover:text-black">
           <Link href="/users">
             <User size={20} />

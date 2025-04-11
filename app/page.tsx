@@ -86,10 +86,11 @@ export default function Home() {
   return (
     <div>
       <div className="container p-12 mx-auto">
-        <div className="grid grid-cols-4 gap-x-0.5 gap-y-1">
+        <div className="grid grid-cols-4 gap-x-4 gap-y-1">
           {products.map((e) => (
             <ProductCard
               key={e.id}
+              id={e.id}
               title={e.title}
               price={e.price}
               discount={e.discount}
