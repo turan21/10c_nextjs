@@ -1,7 +1,4 @@
 "use client";
-
-import React, { useEffect } from "react";
-import { useState } from "react"; // hooks
 import ProductCard from "../components/product_card";
 
 function Products() {
@@ -89,17 +86,17 @@ function Products() {
   ];
   return (
     <div className="container p-12 mx-auto">
-    <div className="grid grid-cols-4 gap-x-4 gap-y-1">
-      {products.map((e) => (
-        <ProductCard
-          key={e.id}
-          id={e.id}
-          title={e.title}
-          price={e.price}
-          discount={e.discount}
-          img={e.img}
-          rating={e.rating}
-        />
+      <div className="grid grid-cols-4 gap-x-4 gap-y-1">
+        {products.map((e) => (
+          <ProductCard
+            key={e.id}
+            id={e.id}
+            title={e.title}
+            price={e.price}
+            discount={e.discount}
+            img={e.img}
+            rating={e.rating}
+          />
         ))}
       </div>
     </div>
