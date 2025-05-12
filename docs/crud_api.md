@@ -291,9 +291,7 @@ export async function DELETE(request, { params }) {
 ```
 
 ## 3. Creating API Routes for Products
-
-Now, let's create the CRUD operations for Products.
-
+# Products
 ### Step 1: Create Product API routes
 
 Create `app/api/products/route.js`:
@@ -431,9 +429,7 @@ export async function DELETE(request, { params }) {
 ```
 
 ## 4. Creating API Routes for Orders
-
-Finally, let's implement the CRUD operations for Orders.
-
+# Orders
 ### Step 1: Create Order API routes
 
 Create `app/api/orders/route.js`:
@@ -655,7 +651,7 @@ export async function DELETE(request, { params }) {
 
 ## 5. Testing Your API
 
-You can test your API routes using tools like Postman, Insomnia, or simply using `fetch` in your browser.
+You can test your API routes using tools like Apidog, Postman, Insomnia, or simply using `fetch` in your browser.
 
 Here are some example API calls:
 
